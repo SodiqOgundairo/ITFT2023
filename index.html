@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      h1 {
-        color: blue;
-        font-size: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- This is a comment
-    This is the headings -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+</head>
+<body>
+    <header class="head">
+        <img src="img/images.png" alt="logo" class="logo">
 
-    <div>
-      <h1>
-        This is <br />
-        heading one!
-      </h1>
-      <h2>This is heading two!</h2>
-      <h3 style="color: red">This is heading three!</h3>
-    </div>
-    <hr />
+        <nav id="navigation">
+            <ul class="navigation-group">
+                <li class="navigation-item"> <a href="index.html"> Home </a> </li>
+                <li class="navigation-item"> <a href="contact.html"> Contact</a> </li>
+                <li class="navigation-item"> <a href="about.html"> About Us </a> </li>
+                <li class="navigation-item"> <a href="courses.html"> Our Courses</a> </li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-      <h4>This is heading four!</h4>
-      <h5>This is heading five!</h5>
-      <h6>This is heading six!</h6>
-    </div>
+    <main id="main">
+        <section class="hero">
+                        
+            <div class="hero-texts">
+                <h1 class="hero-title">
+                    Secure a successful IT & CyberSecurity career!
+                </h1>
 
-    <!-- Ctrl + ? -->
-    <!-- This is paragraph -->
-    <p>This is my first paragraph as a developer</p>
+                <p class="hero-text">We arm students with the skills and knowledge employers are looking for</p>
 
-    <!-- break tag -->
-    <br />
-    <br />
+                <small class="hero-small">With live lessons and hands-on Labs</small>
+            </div>
+            <img src="img/image1.png" alt="computers" class="hero-image">
+        </section>
 
-    <h1>THIS IS ANOTHER HEADING</h1>
+        <section class="results">
+            <h1 class="results-title">BETTER LEARNING. BETTER RESULTS</h1>
+            <p class="results-text">Foundational courses in our Information Technology and Cybersecurity include Network Administration, Information Security, Ethics, Software Engineering, Data Science, Forensics, Programming, Identity and Access Management, Operating Systems, Cloud, and Database Administration.</p>
+        </section>
 
-    <!-- horizontal rule -->
-    <hr />
+        <section class="why-hikima">
+            <img src="img/learning.jpg" alt="Guy learning" class="why-image">
+            <div class="why-texts">
+                <p class="why-texts-title">
+                    Why Hikima?
+                </p>
 
-    <!-- This is a small text -->
-    <small>This is a small text</small>
+                <p class="why-text-subtitle">
+                    We're transforming the way people learn.
+                </p>
 
-    <!-- anchor tag -->
-    <div>
-      <a> This is a link </a>
-      <a href="https://google.com"> Take me to google </a>
-      <a href="https://facebook.com"> Take me to facebook </a>
-      <a href="https://hikimaacademy.com"> Take me to Hikima </a>
-    </div>
-    <a href="contact.html"> Take me to <span> Contact</span> page</a>
+                <p class="why-text-body">
+                    Building on foundational topics, the programs develop students' skills in the areas of risk analysis, cryptography, vulnerability testing, access control implementation, and security audit performance.
+                </p>
 
-    <!-- img src attribute means source -->
-    <img
-      src="img/background_567655319.jpg"
-      alt="Hikima Academy Office Image"
-      width="800px"
-    />
-
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
-    />
-  </body>
+                <a href="courses.html">View our courses</a>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
