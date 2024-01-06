@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COURSES</title>
-</head>
-<body>
+  </head>
+  <body>
     THIS IS MY COURSE PAGE
     <header class="head">
-        <img src="img/images.png" alt="logo" class="logo">
+      <img src="img/images.png" alt="logo" class="logo" />
 
-        <nav id="navigation">
-            <ul class="navigation-group">
-                <li class="navigation-item"> <a href="index.html"> Home </a> </li>
-                <li class="navigation-item"> <a href="contact.html"> Contact</a> </li>
-                <li class="navigation-item"> <a href="about.html"> About Us </a> </li>
-                <li class="navigation-item"> <a href="courses.html"> Our Courses</a> </li>
-            </ul>
-        </nav>
+      <nav id="navigation">
+        <ul class="navigation-group">
+          <li class="navigation-item"><a href="index.html"> Home </a></li>
+          <li class="navigation-item"><a href="contact.html"> Contact</a></li>
+          <li class="navigation-item"><a href="about.html"> About Us </a></li>
+          <li class="navigation-item">
+            <a href="courses.html"> Our Courses</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <form action="php/addData.php" method="post">
+      <label for="name">Student Name</label>
+      <input type="text" id="name" name="name" />
+      <label for="grade">Student Grade</label>
+      <input type="text" id="grade" name="grade" />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="resultscontainer">
+      <button id="getDataButton">Get Data</button>
+      <div id="results"></div>
+    </div>
+
+    <script src="js/data.js"></script>
+  </body>
 </html>
