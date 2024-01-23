@@ -1,0 +1,130 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 115, 255);
+}
+
+.logo-img {
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navigation-group {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(0, 115, 255);
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:active {
+    color: black;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 120px; 
+    /* top right bottom left */
+    /* top-bottom and left-right */
+
+    background-color: powderblue;
+    /* background: url(../img/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.hero-title {
+    color:  rgb(0, 115, 255);
+    font-size: 50px;
+    margin:0;
+}
+
+.hero-title:hover {
+    color:  blue;
+}
+
+.hero-text {
+    margin: 0;
+}
+
+.results{
+    text-align: center;
+}
+
+.results-title {
+    color:  rgb(0, 115, 255);
+    font-size: 30px;
+}
+
+.results-text {
+    color: grey;
+    font-size: 20px;
+}
+
+.why-hikima {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.why-texts {
+    width: 400px;
+    background-color: powderblue;
+    padding: 40px;   
+    align-content: middle;
+}
+
+.why-texts-title {
+    color:  rgb(0, 115, 255);
+    padding-top: 50px;
+}
+
+.view-btn {
+    background-color: rgb(0, 115, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.seconded {
+    margin: 40px;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}

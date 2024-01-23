@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $grade = $_POST['grade'];
 
 // Database credentials
-$host = 'localhost';
+$host = 'localhost'; // the name of the server where your website resides
 $username = 'root'; 
 $password = '';
 $dbname = 'yemi';
@@ -28,25 +28,16 @@ if ($conn->query($sql) === TRUE) {
     http_response_code(200);
     echo '<link rel="stylesheet" href="styles.css">';
     echo 'Data added successfully';
-    echo '<a href="../index.html">Go home</a>';
-    echo '<a href="../courses.html">Add another data </a>';
-
+    echo '<a href="../../index.html">Go home</a>';
+    echo '<a href="../../courses.html">Add another data </a>';
+    
   } else {
     http_response_code(500);
     echo 'Error adding data: ' . $connection->error;
+    echo '<a href="../../index.html">Go home</a>';
+    echo '<a href="../../courses.html">Try again data </a>';
   }
 
-  
-  //! Execute the query with redicretion statement
-  // if ($conn->query($sql) === TRUE) {
-  //     // Redirect to course.html with success message
-  //     header('Location: course.html?success=1');
-  //     exit;
-  // } else {
-  //     // Redirect to course.html with error message
-  //     header('Location: course.html?error=1');
-  //     exit;
-  // }
 
 // Close connection 
 $conn->close();

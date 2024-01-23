@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COURSES</title>
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    THIS IS MY COURSE PAGE
+    <!-- the header and navigation lives here -->
     <header class="head">
-      <img src="img/images.png" alt="logo" class="logo" />
+      <div class="logo">
+          <img src="assets/img/images.png" alt="logo" class="logo-img">
+          <h3 class="logo-text">HikimaClone</h3>
+      </div>
+      
 
       <nav id="navigation">
-        <ul class="navigation-group">
-          <li class="navigation-item"><a href="index.html"> Home </a></li>
-          <li class="navigation-item"><a href="contact.html"> Contact</a></li>
-          <li class="navigation-item"><a href="about.html"> About Us </a></li>
-          <li class="navigation-item">
-            <a href="courses.html"> Our Courses</a>
-          </li>
-        </ul>
+          <ul class="navigation-group">
+              <li class="navigation-item"> <a class="nav-link" href="index.html"> Home </a> </li>
+              <li class="navigation-item"> <a class="nav-link" href="contact.html"> Contact</a> </li>
+              <li class="navigation-item"> <a class="nav-link" href="about.html"> About Us </a> </li>
+              <li class="navigation-item"> <a class="nav-link" href="courses.html"> Our Courses</a> </li>
+          </ul>
       </nav>
-    </header>
+  </header>
+  <!-- the header ends here -->
 
-    <form action="php/addData.php" method="post">
+  <h1> 
+    THIS IS MY COURSE PAGE</h1>
+
+    <form action="assets/php/addData.php" method="post">
       <label for="name">Student Name</label>
       <input type="text" id="name" name="name" />
       <label for="grade">Student Grade</label>
@@ -31,11 +38,13 @@
       <input type="submit" value="Submit" />
     </form>
 
+
+
     <div class="resultscontainer">
       <button id="getDataButton">Get Data</button>
       <div id="results"></div>
     </div>
 
-    <script src="js/data.js"></script>
+    <script src="assets/js/data.js"></script>
   </body>
 </html>

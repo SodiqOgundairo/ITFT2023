@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <h1>THIS IS MY CONTACT PAGE</h1>
 
     <header class="head">
-        <img src="img/images.png" alt="logo" class="logo">
+        <img src="assets/img/images.png" alt="logo" class="logo">
 
         <nav id="navigation">
             <ul class="navigation-group">
@@ -23,21 +24,77 @@
 
     <main class="main">
         <section class="form">
+
             <form class="form-parent">
                 <label for="fullname" class="form-label">Full name</label>
                 <input type="text" class="form-input" id="fullname" name="fullname">
+                
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-input" id="email" name="email">
+                
                 <label for="telephone" class="form-label">Telephone</label>
                 <input type="tel" class="form-input" id="telephone" name="telephone">
+                
                 <label for="address" class="form-label">Address</label>
                 <input type="text" class="form-input" id="address" name="address">
+                
                 <label for="pwd" class="form-label">Password</label>
                 <input type="password" class="form-input" id="pwd" name="pwd">
+                
+
+                <label for="gender" class="form-label">Gender </label>
+
+                <label for="">Male</label>
+                <input type="radio" class="form-input" id="pwd" name="gender">
+                <label for="">Female</label>
+                <input type="radio" class="form-input" id="pwd" name="gender">
+
                 <input type="button" value="Submit">
+
                 <input type="submit" value="Upload">
             </form>
+
+            <p> Are you sure you are not a robot?</p>
+            <input type="checkbox" name="notRobot" id=""> <label for="notRobot">I am not a Robot</label>
+            <img src="img/captch.jpg" width="40px" alt="">
         </section>
+
+        <!-- A TABLE tr means table-row th means table-head td means table-data -->
+        <table>
+            <thead>
+                <th>Company</th>
+                <th>Contact </th>
+                <th>Country</th>
+            </thead>
+
+            <tr>
+                <td> Hikima Academy</td>
+                <td> Kay Oloke</td>
+                <td> USA </td>
+            </tr>
+
+            <tr>
+                <td> Company A</td>
+                <td> Giovanni Spinna</td>
+                <td> Jamaica </td>
+            </tr>
+
+            <tr>
+                <td> Company B</td>
+                <td> AY </td>
+                <td> Lesotho </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> Yemi </td>
+                <td rowspan="2">Unknown</td>
+            </tr>
+
+            <tr>
+                <td>Space</td>
+                <td>Content</td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

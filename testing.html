@@ -22,6 +22,7 @@
       </h1>
       <h2>This is heading two!</h2>
       <h3 style="color: red">This is heading three!</h3>
+      <h1 style="color: red;" id="buttons">This is heading One with a different color!</h1>
     </div>
     <hr />
 
@@ -58,7 +59,7 @@
 
     <!-- img src attribute means source -->
     <img
-      src="img/background_567655319.jpg"
+      src="assets/img/background_567655319.jpg"
       alt="Hikima Academy Office Image"
       width="800px"
     />
@@ -71,9 +72,11 @@
     <br>
     <!-- image as a link -->
 
-    <a href="contact.html"> <img src="img/images.png" alt=""> </a>
+    <a href="contact.html"> <img src="assets/img/images.png" alt=""> </a>
 
     <a href="mailto:yemi@hikimaacademy.net"> Send Yemi an Email</a>
+
+    <a href="somepage"> Some page Link goes here </a>
 
     <a href="tel:+189234790"> Call Dr. Oscar </a>
 
@@ -95,7 +98,7 @@
     </p>
 
 
-    <h3> HTML LISTS </h3>
+    <h3 id="lists"> HTML LISTS </h3>
     <h5> UNORDERED LISTS </h5>
 
     <ul>
@@ -105,7 +108,9 @@
         <li>office space</li>
     </ul>
 
-    <h5>ORDERED LISTS</h5>
+    <p id="testing"></p>
+
+    <h5 id="iii">ORDERED LISTS</h5>
     <ol>
         <li> Dr. Oscar</li>
         <li>AY</li>
@@ -114,5 +119,11 @@
         <li>Anthony</li>
         <li>Paola</li>
     </ol>
+
+    <button onmouseover="mouseIsActive()" id="buttons">Click me!</button>
+
+    
+    <script src="assets/js/test.js"></script>
+
   </body>
 </html>
